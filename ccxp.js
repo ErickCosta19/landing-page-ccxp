@@ -28,8 +28,3 @@ function formatoTempo(tempo){
 
 countdown();
 setInterval(countdown, 1000)
-
-function entrar(){
-    principal.style.background = 'yellow'
-    principal.style.color = 'black'
-}

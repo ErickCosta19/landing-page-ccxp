@@ -51,7 +51,7 @@
     </div>
 
     <div>
-        <video controls="autoplay" autoplay="" name="media" loop="" src="https://dnc-ccxp22-lp.vercel.app/Arlequina.mp4" type="video/mp4" class="video"> 
+        <video controls="" autoplay="" name="media" loop="" src="https://dnc-ccxp22-lp.vercel.app/Arlequina.mp4" type="video/mp4" class="video"> 
         </video>
     </div>
     
@@ -60,16 +60,28 @@
     </div>
 
     <div id="img">
-        <img src="./ingresso1.svg" style="cursor: pointer;">
-        <img src="./ingresso2.svg" style="cursor: pointer;">
-        <img src="./ingresso3.svg">
-        <img src="./ingresso4.svg" style="cursor: pointer;">
+        <img src="./ingresso1.svg" onmouseover="highlightCard('#quinta')" onmouseout="highlightCard('#quinta')" onclick="selectCard('#quinta')" id="quinta" style="cursor: pointer;">
+        <img src="./ingresso2.svg" onmouseover="highlightCard('#sexta')" onmouseout="highlightCard('#sexta')" onclick="selectCard('#sexta')" id="sexta" style="cursor: pointer;">
+        <img src="./ingresso3.svg" onmouseover="highlightCard('#sabado')" onmouseout="highlightCard('#sabado')" onclick="selectCard('#sabado')" id="sabado" style="cursor: pointer;">
+        <img src="./ingresso4.svg" onmouseover="highlightCard('#domingo')" onmouseout="highlightCard('#domingo')" onclick="selectCard('#domingo')" id="domingo" class="card-ingresso" style="cursor: pointer;">
     </div>
 
-    <a href="https://www.ccxp.com.br/" target="_blank">
-        <input type="button" value="GARANTA O SEU!" class="botao" onmouseenter="entrar()">
-    </a>
+    <div id="compra">
+        <button onclick="showSelectedCards()">
+            GARANTA O SEU!
+        </button>
+    
+    </div>
 
+    <div>
+        <form action="https://www.google.com/">
+            <input type="email" placeholder="Seu e-mail" required/>
+            <input type="submit"/>
+
+        </form>
+    </div>
+    
     <script src="./ccxp.js"></script>
+    <script src="./main.js"></script>
 </body>
 </html>

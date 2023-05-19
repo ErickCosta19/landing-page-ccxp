@@ -7,6 +7,7 @@ body{
 header{
     background-color: yellow;
     width: 100%;
+    padding: 10px;
 }
 
 section{
@@ -32,7 +33,7 @@ section{
 
 #text{
     color: #E33881;
-    margin-top: 50px;
+    margin-top: 45px;
     font-size: 15px;
     width: 650px;
     position: absolute;
@@ -57,12 +58,13 @@ section{
     width: 660px;
     height:410px;
     left: 630px;
-    top: 130px;
+    top: 150px;
     
     background: url(image.png);
 }
 
-.botao{
+
+button {
     background-color: #514988;
     color: #ffffff;
     cursor: pointer;
@@ -74,5 +76,40 @@ section{
     height: 80px;
     left: 917px;
     top: 650px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: all 0.5s ease-in-out;
+}
 
+button:hover {
+    background-color: yellow;
+    color: black;
+}
+
+
+.card-highlight{
+    box-shadow: 8px 15px 15px grey;
+}
+
+.card-selected{
+    border: 5px solid green;
+}
+
+input{
+    background-color: #514988;
+    color: #ffffff;
+    font-size: 25px;
+    font-weight: 740;
+    cursor: pointer;
+    border-radius: 10px;
+    width: 300px;
+    height: 80px;
+    transition: all 0.5s ease-in-out;
+}
+
+input:hover{
+    background-color: yellow;
+    color: black;
 }
